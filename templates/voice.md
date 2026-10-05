@@ -1,6 +1,6 @@
-# voice.md
+# youtube-<channel>.md
 
-Copy this to `~/.claude/youtube/voice.md` and fill it in. Every skill in this pack reads it. Ten
+Copy this to `~/.claude/youtube/channels/youtube-<channel>.md` (one file per channel) and fill it in. Every skill in this pack reads it; name the channel in your request ("script for mogoplay") and the skill loads that file. Ten
 minutes here is worth more than any prompt you will ever write, because on YouTube you have to say
 the words out loud and a script in the wrong voice is unreadable on camera.
 

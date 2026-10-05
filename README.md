@@ -42,10 +42,13 @@ Code at all? Paste any single `SKILL.md` at the top of a chat and it runs as a m
 Python tools, which is most of the point of `/yt-script`, `/yt-retention` and `/yt-edit`, but the
 rest works.
 
-Then spend ten minutes on [`templates/voice.md`](templates/voice.md). Copy it to
-`~/.claude/youtube/voice.md` and fill it in, or send Claude three of your own videos and say "write
-my voice.md from these". Every skill reads that file. It matters more here than anywhere else,
-because you have to say the words out loud.
+Then spend ten minutes on [`templates/voice.md`](templates/voice.md). One voice file per channel:
+copy it to `~/.claude/youtube/channels/youtube-<channel>.md` (e.g. `youtube-pibubear.md`,
+`youtube-mogoplay.md`) and fill it in, or send Claude three of your own videos and say "write the
+voice for <channel> from these". Every skill reads it: name the channel in your request ("script for
+mogoplay") and it loads that file; with a single channel it is picked automatically; with several and
+no channel named, the skill asks. The old single `~/.claude/youtube/voice.md` still works as a
+fallback. It matters more here than anywhere else, because you have to say the words out loud.
 
 ## The eleven
 

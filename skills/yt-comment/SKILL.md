@@ -13,11 +13,17 @@ decide whether a thread becomes a conversation other people read.
 
 ## Before you write
 
-1. Read `~/.claude/youtube/voice.md` if it exists. That is the user's voice profile: how they talk
-   on camera, the words they never use, who they are talking to, what they will not claim. If it
-   does not exist, ask for **three of their own videos**, read or transcribe them, infer the voice,
-   and write the file. A script in the wrong voice is worse than no script, because they have to
-   read it out loud.
+1. Load the voice profile for the channel this is for. Voices live in `~/.claude/youtube/channels/`,
+   one file per channel, named `youtube-<channel>.md` (e.g. `youtube-pibubear.md`).
+   - If the user names a channel ("script for mogoplay"), read `youtube-<channel>.md`.
+   - If they do not and there is only one file there, use it.
+   - If there are several and they do not name one, ask which channel before writing anything.
+   - If the folder does not exist, fall back to `~/.claude/youtube/voice.md`.
+   Say which channel's voice you loaded in one line. That file is the voice profile: how they talk
+   on camera, the words they never use, who they are talking to, what they will not claim. If no
+   profile exists for the channel, ask for **three of their own videos**, read or transcribe them,
+   infer the voice, and write `~/.claude/youtube/channels/youtube-<channel>.md`. A script in the
+   wrong voice is worse than no script, because they have to read it out loud.
 2. Never invent a number, a result or a source. If a figure would strengthen it and you do not have
    one, ask for it or write the line without it.
 
