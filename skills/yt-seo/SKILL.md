@@ -19,6 +19,8 @@ For a video aimed at the subscriber feed, say so and spend the effort on `/yt-pa
    - If they do not and there is only one file there, use it.
    - If there are several and they do not name one, ask which channel before writing anything.
    - If the folder does not exist, fall back to `~/.claude/youtube/voice.md`.
+   - No local filesystem (claude.ai)? Use the `youtube-<channel>.md` in the project knowledge or
+     attached to the chat. With several and none named, ask which channel.
    Say which channel's voice you loaded in one line. That file is the voice profile: how they talk
    on camera, the words they never use, who they are talking to, what they will not claim. If no
    profile exists for the channel, ask for **three of their own videos**, read or transcribe them,
